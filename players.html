@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    header p{
+        font-size: 3rem;
+    }
+    #numofplayers{
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 1.5rem;
+    }
+    button{
+        padding: 10px;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        border-radius: 20px;
+        width: 100px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    ul input{
+        width: 300px;
+        padding: 10px;
+        margin: 10px 0px;
+        text-align: center;
+
+    }
+    .start-btn{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: none;
+    }
+    
+
+</style>
+<body>
+    <header>
+        <p>Select number of players</p>
+        <input id = "numofplayers"type="text" placeholder="number of players">
+        <button class="btn">Enter</button>
+    </header>
+
+    <!-- Players names -->
+    <ul class="list-players">
+    
+    </ul>
+    <div class="start">
+        <a href="paired.html"><button class="start-btn">start</button></a>
+    </div>
+    
+<script src="app.js"></script>
+</body>
+</html>
