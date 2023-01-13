@@ -2,9 +2,9 @@
 //       Players 
 //////////////////////////
 players = []
+const n = document.getElementById('numofplayers')
 
 function num_players(){
-    let n = document.getElementById('numofplayers')
     nums = n.value
     // listofplayers.append(input)
     for (i = 0; i < nums; i++) {
@@ -25,23 +25,22 @@ function num_players(){
 const btn = document.querySelector('.btn').addEventListener('click', num_players)
 
 function append_players(){
-    let n = document.getElementById('numofplayers')
     nums = n.value
+    var all = document.querySelectorAll('.players')
 
-    player = document.querySelectorAll('.players')
-    console.log(player)
+    console.log(all)
 
-    // for (var i = 0; i < 5; i++) {
-    //   console.log(player[i])
-    // }
-
+    for (i = 0;i < nums; i++){
+        players.push(all[i].value)
+    }
+    // console.log(players)
 
 }
 
 
 //appending players to the list
 const start = document.querySelector('.start-btn')
-start.addEventListener('click', append_players())
+start.addEventListener('click', append_players)
 
 
 
