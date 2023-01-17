@@ -33,7 +33,7 @@ function append_players(){
     for (i = 0;i < nums; i++){
         players.push(all[i].value)
     }
-    // console.log(players)
+    console.log(players)
 
 }
 
