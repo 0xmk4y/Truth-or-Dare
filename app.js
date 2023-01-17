@@ -43,5 +43,10 @@ const start = document.querySelector('.start-btn')
 start.addEventListener('click', append_players)
 
 
+// function player_name(){
+//     //this is for the header, that tells whose turn it is on play.html
 
+//     //loop to go thru the players array
+//     for(i in)
+// }
 
